@@ -1,0 +1,8 @@
+body{
+    background-image: url(/images/BG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+close:hover(){
+    background-color: red;
+}
