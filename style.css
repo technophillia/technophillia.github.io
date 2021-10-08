@@ -18,6 +18,7 @@ img{
 .navbar{
   width: 300px;
   display: flex;
+  float: left;
 }
 .navbar ul{
  padding-left: 0;
