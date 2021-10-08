@@ -4,12 +4,11 @@ body{
     background-image: url(images/BG.png);
     background-repeat: no-repeat;
     background-size: cover;
-    overflow-y: hidden;
+    
     font-family:  "Roboto";
 }
-close:hover(){
 
-}
+
 img{
     user-select: none;
     -webkit-user-drag: none;
@@ -44,3 +43,4 @@ img{
   display:inline-block;
   padding-left: 1em;
 }
+
