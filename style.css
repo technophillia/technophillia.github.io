@@ -1,33 +1,62 @@
 body{
   height: 100vh;
 
-    background-image: url(images/BG.png);
+    background-image: url(images/mc3.png);
     background-repeat: no-repeat;
-    /* background-size: cover; */
+    background-size: cover;
+    overflow-x: hidden;
     
     font-family:  "Roboto";
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #727272;
+  border-radius: 50px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background: #66FCF1;
+}
+
+/* Handle on hover */
 
 img{
     user-select: none;
     -webkit-user-drag: none;
 }
-
+.header{
+  overflow:hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  
+}
 
 .navbar{
   width: 300px;
-  display: flex;
   float: left;
+  overflow-y: hidden;
+  position: fixed;
+
 }
 .navbar ul{
  padding-left: 0;
  list-style-type: none;
  display: inline-block;
+    overflow-y: hidden;
 }
 .navbar ul li{
   width: 17em;
-  margin-left: 1em;
+    overflow-y: hidden;
+    margin-left: 1em;
+  font-size:13px;
 }
 .active{
   background-color:rgba(0,0,0,0.5);
@@ -44,4 +73,13 @@ img{
   display:inline-block;
   padding-left: 1em;
 }
+.maincontent{
+  overflow:visible;
+  width: 100%;
+}
 
+.bottomleft{
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
