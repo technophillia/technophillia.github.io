@@ -1,5 +1,5 @@
 function getEed(){
-    alert ("use fullscreen for the best expirience");
+    alert ("Use fullscreen for the best expirience");
 }
 function closeWindow(){
 }
