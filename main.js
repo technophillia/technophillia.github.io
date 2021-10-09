@@ -1,7 +1,7 @@
 
-// function getEed(){
-//     alert ("Use fullscreen for the best expirience");
-// }
+function getEed(){
+    alert ("Use fullscreen for the best expirience");
+}
 function closeWindow(){
 }
     var elem = document.getElementById("maxwindow");
