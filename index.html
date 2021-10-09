@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="main.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-
+    <!-- CSS only -->
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/logo.png" type="image/png">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -14,7 +14,7 @@
 </head>
 <body onload="getEed()">
     <!-- <div id="preloader">
-        <img src="/images/logo.png" class="preloaderimg" style="max-width: 30%;">
+        <img src="images/logo.png" class="preloaderimg" style="max-width: 30%;">
         <div class="name">
             <span>
                 Aspect
@@ -26,7 +26,7 @@
     <div style="float: right; top: 0;"> <a href="/" onclick='closeWindow(), alert("window.close() is not working")'><img src="images/close.png" class="close" style="max-width: 8%;float: right; padding-top: 10px; padding-right: 30px;"></a>
         <a href="#" onclick="openFullscreen()" id="maxwindow"><img src="images/full screen.png" style="float: right; padding-top: 10px; padding-right: 30px; max-width: 7%;"></a>
         <a href="#" onclick="closeWindow(), alert('Window cant minmise because of security issues')"><img src="images/minmise.png" style="max-width: 7%;float: right; padding-top: 15px; padding-right: 30px;"></a></div>
-   
+
   </div>
     <div class= "navbar" style=" padding-top: 5%;">
       <ul>
@@ -37,23 +37,34 @@
           <li style="border-radius:25px;" class="hvr-sweep-to-right"><a href="" class="bhendi"><i class="fas fa-bullseye fa-lg" style=""></i><p class="navitem" style="    ">  Features</p></a></li>
           <li style="border-radius:25px;" class="hvr-sweep-to-right"><a href="" class="bhendi"><i class="fas fa-cog fa-lg" style=""></i><p class="navitem" style="    ">  Settings</p></a></li>
       <div style="padding-top: 200px;">
-          <li style="border-radius:25px; background-color: rgba(0, 0, 0, 0.144); " class="hvr-sweep-to-right"><a href="" class="bhendi"><img src="/images/e.png" style="max-width: 10%; align-items: center; padding-bottom: 3px; border-radius: 69%;"><p class="navitem">  Wusername<br><i class="fas fa-star" style="color: #66fcf1;"></i>&ThickSpace; Level 96</p></a></li>
+          <li style="border-radius:25px; background-color: rgba(0, 0, 0, 0.144); " class="hvr-sweep-to-right"><a href="" class="bhendi"><img src="images/e.png" style="max-width: 10%; align-items: center; padding-bottom: 3px; border-radius: 69%;"><p class="navitem">  Wusername<br><i class="fas fa-star" style="color: #66fcf1;"></i>&ThickSpace; Level 96</p></a></li>
 </div>
       </ul>
     </div>
-   
-    <div class="maincontent" style="padding-top: 9px; overflow: visible; overflow-y: visible; padding-left: 300px; padding-top: 5%;">
-        <img src="/images/cyber.jpg" style="max-width: 15%; padding-right: 5px;">
-        <img src="/images/fort.png" style="max-width: 15%;">
-        
-        <img src="/images/fifa m8.png" style="max-width: 40%;">
+
+    <div class="maincontent" style="">
+
+        <img class="smallimgs1"src="images/cyber.jpg" >
+        <img class="smallimgs" src="images/fort.png" >
+        <div id="fifa">
+        <img class="bigimgs"  src="images/fifa m8.png" style='max-width: 52.25%;'>
+        <div class="bottom-right"><span>SPOTLIGHT</span></div>
+      </div>
         <br>
-        <img src="/images/apex.png" style="max-width: 15%; padding-top: 5px; padding-right: 5px;">
-        <img src="/images/gtal.png" style="max-width: 15%; ">
-        <img src="/images/demn.png" style="max-width: 40%; ">
+        <img class="smallimgs2" src="images/apex.png">
+        <img class="smallimgs" src="images/gtal.png" >
+        <img class="bigimgs" src="images/demn.png" >
+        <br>
+        <img class="smallimgs2" src="images/apex.png" >
+        <img class="smallimgs" src="images/gtal.png" >
+        <img class="bigimgs" src="images/demn.png" >
+        <br>
+        <img class="smallimgs2"  src="images/apex.png" >
+        <img class="smallimgs" src="images/gtal.png">
+        <img class="bigimgs" src="images/demn.png" >
         <div class="bottomleft"></div>
 
-        
+
 
     </div>
 

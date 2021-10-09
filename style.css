@@ -4,8 +4,8 @@ body{
     background-image: url(images/mc3.png);
     background-repeat: no-repeat;
     background-size: cover;
-    overflow-x: hidden;
-    
+    overflow: hidden;
+
     font-family:  "Roboto";
 }
 
@@ -37,7 +37,7 @@ img{
   position: fixed;
   top: 0;
   width: 100%;
-  
+
 }
 
 .navbar{
@@ -75,12 +75,87 @@ img{
   padding-left: 1em;
 }
 .maincontent{
-  overflow:visible;
-  width: 100%;
+  overflow:hidden;
+  overflow-y: scroll;
+width: 73.25%;
+position: absolute;
+top:15% ;
+left: 25%;
+max-height: 80vh;
+
 }
 
 .bottomleft{
   position: absolute;
   bottom: 8px;
   left: 16px;
+}
+.smallimgs1{
+  max-width: 20%; padding-right: 5px;
+}
+.smallimgs{
+  max-width: 20%;
+}
+
+.smallimgs2{
+  max-width: 20%; padding-right: 5px; padding-top: 5px;
+}
+.bigimgs{
+  max-width: 53.25%;
+}
+
+@keyframes fadeInLeft {
+   0% {
+      opacity: 0;
+      transform: translateX(-20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+#fifa{
+  display: inline;
+  position: relative;
+}
+#fifa:hover .bottom-right{
+  display: flex;
+  -webkit-animation-name: fadeInLeft;
+    -moz-animation-name: fadeInLeft;
+    -o-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 0.35s;
+    -moz-animation-duration: 0.35s;
+    -o-animation-duration: 0.35s;
+    animation-duration: 0.35s;
+    -webkit-animation-delay: 0.35s;
+    -moz-animation-delay: 0.35s;
+    -o-animation-duration:0.35s;
+    animation-delay: 0.35s;
+}
+.bottom-right {
+
+      position: absolute;
+      width: 16em;
+      height: 2.5em;
+      background: rgb(19,19,19);
+      background: linear-gradient(
+  90deg, rgba(19,19,19,1) 0%, rgba(196,196,196, 0.25) 100%);
+      bottom: 4px;
+      left: 0px;
+      align-items: center;
+      color: white;
+      text-transform: capitalize;
+}
+.bottom-right span{
+  padding-left: 1.2em;
+font-size: 0.75em;
+}
+.bottom-right{
+  display: none;
 }
