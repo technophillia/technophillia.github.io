@@ -59,11 +59,14 @@ img{
     margin-left: 1em;
   font-size:13px;
 }
-.active{
-  background-color:rgba(0,0,0,0.5);
-  border-left: 4px solid #66fcf1;
+a:link{
+  text-decoration: none;
+  color: white;
 
-
+}
+a:visited{
+  text-decoration: none;
+  color: white;
 }
 .navbar ul li a{
   padding-left: 3em;
@@ -138,6 +141,7 @@ max-height: 80vh;
     -o-animation-duration:0.35s;
     animation-delay: 0.35s;
 }
+
 .bottom-right {
 
       position: absolute;
