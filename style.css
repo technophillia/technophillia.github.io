@@ -39,6 +39,11 @@ img{
   width: 100%;
 
 }
+.xboxboi{
+  background-image: url(/images/xboxb.png);
+  background-repeat: no-repeat;
+  background-size: 95%;
+}
 
 .navbar{
   width: 300px;
