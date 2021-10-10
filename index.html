@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="main.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <!-- CSS only -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/logo.png" type="image/png">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>Aspect | Home</title>
-    
+
 </head>
 <body onload="getEed()">
     <!-- <div id="preloader">
@@ -22,7 +25,7 @@
             </span>
         </div>
     </div> -->
-    
+
     <div class="header">
     <a href="/"><img src="images/logo.png" style="max-width: 2%; padding-left: 1em; padding-top: 0.7em;  padding-right: 1px;"></a>
     <div style="float: right; top: 0;"> <a href="/" onclick='closeWindow(), alert("window.close() is not working")'><img src="images/close.png" class="close" style="max-width: 8%;float: right; padding-top: 10px; padding-right: 30px;"></a>
@@ -31,7 +34,7 @@
 
   </div>
     <div class= "navbar" style=" padding-top: 5%;">
-      
+
       <ul>
           <li style="border-radius:10px; border-top-left-radius: 0px; border-bottom-left-radius: 0px;" class="hvr-sweep-to-right active"><div class="borderleft"></div><a href="/" class="bhendi"><i class="fas fa-home fa-lg" style=""></i><p class="navitem" style="padding-left: 0.8em;">  Home</p></a></li>
           <li style="border-radius:25px;" class="hvr-sweep-to-right"><a href="" class="bhendi"><i class="fab fa-playstation fa-lg" style=""></i><p class="navitem" style="padding-left: 0.8em;">  Playstation</p></a></li>
@@ -44,17 +47,42 @@
 </div>
       </ul>
     </div>
-    
+
     <div class="maincontent" style="">
-        <p style="color: white; font-size: x-large; padding-right: 10px;">Play Now <input type="text" style="float: right; background-color: rgba(0, 0, 0, 0.411); border: none; border-radius: 6.9px; padding-top:5px; padding-bottom: 5px; color: white;"><img src="/images/search.png" style="max-width: 2%; float: right; background-color: rgba(0, 0, 0, 0.411); padding-top: 5px; padding-bottom: 5px; padding-left: px; padding-right: 5px; border-radius: 6.9px;"><img src="/images/grid.png" style="float: right; padding-right: 6.9px; max-width: 2%; padding-left: 5px;">&ThickSpace;&ThickSpace;<img src="/images/Group 3.png" style="float: right; padding-right: 12px; max-width: 2%; padding-top: 1px;"></p>
-       
-        
-      
+        <p style="color: white; font-size: x-large; padding-right: 10px; display:inline;">Play Now
+          <div class="rightthings">
+
+          <img src="images/search.png" class="searchicon" >
+          <img src="images/grid.png" class="gridicon" >
+          <img src="images/Group 3.png" class="restarticon"></p>
+        </div>
+<br>
         <img class="smallimgs1"src="images/cyber.jpg" >
         <img class="smallimgs" src="images/fort.png" >
         <div id="fifa">
-        <img class="bigimgs"  src="images/fifa m8.png" style='max-width: 52.25%;'>
 
+  <ul class="slider">
+      <li>
+          <input type="radio" id="slide1" name="slide" checked>
+          <label for="slide1"></label>
+          <img src="https://dribbble.s3.amazonaws.com/users/322/screenshots/872485/coldchase.jpg" alt="Panel 1">
+      </li>
+      <li>
+          <input type="radio" id="slide2" name="slide">
+          <label for="slide2"></label>
+          <img src="https://dribbble.s3.amazonaws.com/users/322/screenshots/980517/icehut_sm.jpg" alt="Panel 2">
+      </li>
+      <li>
+          <input type="radio" id="slide3" name="slide">
+          <label for="slide3"></label>
+          <img src="https://dribbble.s3.amazonaws.com/users/322/screenshots/943660/hq_sm.jpg" alt="Panel 3">
+      </li>
+      <li>
+          <input type="radio" id="slide4" name="slide">
+          <label for="slide4"></label>
+          <img src="https://dribbble.s3.amazonaws.com/users/322/screenshots/599584/home.jpg" alt="Panel 4">
+      </li>
+  </ul>
         <div class="bottom-right"><span>Spotlight</span></div>
       </div>
         <br>
@@ -86,16 +114,16 @@
           <br>
           <br>
           <h2 style="color: white;">Top Games</h2>
-          <img src="/images/asp.png" style="max-width: 15%; padding-left: 69px; border-radius: 10px;">
-          <img src="/images/cybor.png" style="max-width: 15%; padding-left: 69px; border-radius: 10px;">
-          <img src="/images/mined.png" style="max-width: 15%; padding-left: 69px; border-radius: 10px;">
-          <img src="/images/apaz.png" style="max-width: 15%; padding-left: 69px; border-radius: 10px;">
+          <img src="images/asp.png" style="max-width: 15%; padding-left: 69px; border-radius: 10px;">
+          <img src="images/cybor.png" style="max-width: 15%; padding-left: 69px; border-radius: 10px;">
+          <img src="images/mined.png" style="max-width: 15%; padding-left: 69px; border-radius: 10px;">
+          <img src="images/apaz.png" style="max-width: 15%; padding-left: 69px; border-radius: 10px;">
           <br>
           <br>
           <br>
           <div class="xboxboi">
             <h2 style="color: white; padding-left: 69px; padding-top: 30px;">Best of xbox games studios</h2>
-            <p style="color: white; padding-left: 96px;"> play some of the best games in history<img src="/images/msfs.png" style="max-width: 15%; float: right; padding-right: 69px; padding-bottom: 10%;"><img src="/images/forza.png" style="max-width: 15%; float: right; padding-right: 30px; padding-bottom: 10%;"><img src="/images/demndudethetscraz.png" style="max-width: 15%; float: right; padding-right: 30px; padding-bottom: 69px;"></p>
+            <p style="color: white; padding-left: 96px;"> play some of the best games in history<img src="images/msfs.png" style="max-width: 15%; float: right; padding-right: 69px; padding-bottom: 10%;"><img src="images/forza.png" style="max-width: 15%; float: right; padding-right: 30px; padding-bottom: 10%;"><img src="images/demndudethetscraz.png" style="max-width: 15%; float: right; padding-right: 30px; padding-bottom: 69px;"></p>
           <br>
           <br>
           <br>
