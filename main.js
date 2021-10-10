@@ -1,6 +1,6 @@
 
 function getEed(){
-    alert ("Use fullscreen for the best expirience");
+	setTimeout(function(getEed){ alert("Use fullscreen for the best experience"); }, 100);
 }
 function closeWindow(){
 }
