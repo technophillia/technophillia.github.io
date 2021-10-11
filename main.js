@@ -20,12 +20,14 @@ function closeWindow(){
     function Check_next(i) {
 			console.log(i)
 			if(i === 0){
-			document.getElementsByClassName('bigimgs')[0].fadeOut(1000);
+			$('#slider').fadeOut(10);
   	   document.getElementsByClassName('bigimgs')[0].src = "images/ghost.png"
-			 document.getElementsByClassName('bigimgs')[0].fadeIn(10);
+			 $('#slider').fadeIn(10);
 			 }
 			if (i === 1 ){
+				$('#slider').fadeOut(10);
 				document.getElementsByClassName('bigimgs')[0].src = "images/fifa m8.png"
+				$('#slider').fadeIn(10);
 			}
 
   	}
