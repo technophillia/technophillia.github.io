@@ -100,19 +100,21 @@ max-height: 90vh;
   left: 16px;
 }
 .smallimgs1{
-  max-width: 20%; padding-right: 5px;
+  max-width: 20.35%;
+  padding-right: 5px;
 }
 .smallimgs{
-  max-width: 20%;
+  max-width: 20.35%;
 }
 
 .smallimgs2{
-  max-width: 20%; padding-right: 5px; padding-top: 5px;
+  max-width: 20.35%; padding-right: 5px;
 }
 .bigimgs{
   padding-left: 0.2em;
   max-width: 53.25% !important;
   border-radius: 5px;
+  margin: 0;
 }
 
 @keyframes fadeInLeft {
@@ -159,26 +161,17 @@ max-height: 90vh;
 }
 .bottom-right {
 
-position: absolute;
-
-width: 16em;
-
-height: 2.5em;
-
-background: rgb(19,19,19);
-
-background: linear-gradient(
+  position: absolute;
+      width: 16em;
+      height: 2.5em;
+      background: rgb(19,19,19);
+      background: linear-gradient(
   90deg, rgba(19,19,19,1) 0%, rgba(196,196,196, 0.25) 100%);
-
-bottom: 2.5px;
-
-left: 0.2em;
-
-align-items: center;
-
-color: white;
-
-text-transform: capitalize;
+      bottom: 4px;
+      left: 0.15em;
+      align-items: center;
+      color: white;
+      text-transform: capitalize;
 }
 .bottom-right span{
   padding-left: 1.2em;
@@ -221,7 +214,7 @@ font-size: 0.75em;
   padding-bottom: 5px;
   padding-right: 9em;
   padding-left: 0.5em;
-  margin-right: 3.6em;
+  margin-right: 3em;
   border-radius: 6.9px;
 }
 .gridicon{
@@ -241,143 +234,11 @@ font-size: 0.75em;
   display: inline;
 }
 
-.slider {
-    /* background-color: #fff; */
-    /* box-shadow: inset 0 0 2px hsla(0,0%,0%,.2),
-                0 3px 1px hsla(0,0%,100%,.75),
-                0 -1px 1px 2px hsla(0,0%,0%,.1); */
-    height: -26.25em;
-    /* left: 50%; */
-    margin: 0;
-    padding: 0;
-    transform: translateY(15%);
-    /* margin: -9.875em -13em; */
-    padding: 0em;
-    padding-left: 0.2em;
-    display: inline-block;
-    /* position: absolute; */
-    width: -2em;
-    /* top: -55%; */
-    /* width: 25em; */
-}
-
-/* Frame */
-
-.slider:before {
-    /* background-color: #22130c; */
-    /* bottom: -2.5em; */
-    /* box-shadow: inset 0 1px 1px 1px hsla(0,0%,100%,.2),
-                inset 0 -2px 1px hsla(0,0%,0%,.4),
-                0 5px 50px hsla(0,0%,0%,.25),
-                0 20px 20px -15px hsla(0,0%,0%,.2),
-                0 30px 20px -15px hsla(0,0%,0%,.15),
-                0 40px 20px -15px hsla(0,0%,0%,.1); */
-    /* content: ''; */
-    left: -2.5em;
-    position: absolute;
-    right: -2.5em;
-    top: -2.5em;
-    z-index: -1;
-}
-
-/* Mat */
-
-.slider:after {
-    /* background-color: #fff5e5; */
-    /* bottom: -1.5em; */
-    /* box-shadow: 0 2px 1px hsla(0,0%,100%,.2),
-                0 -1px 1px 1px hsla(0,0%,0%,.4),
-                inset 0 2px 3px 1px hsla(0,0%,0%,.2),
-                inset 0 4px 3px 1px hsla(0,0%,0%,.2),
-                inset 0 6px 3px 1px hsla(0,0%,0%,.1); */
-    /* content: ''; */
-    left: -1.5em;
-    position: absolute;
-    right: -1.5em;
-    top: -1.5em;
-    z-index: -1;
-}
-
-/* Slides */
-
-.slider li {
-
-    list-style:none;
-    position: absolute;
-}
-.slider input {
-    display: none;
-}
-
-/* Navigation */
-
-.slider label {
-    background-color: #111;
-    background-image: linear-gradient(transparent, hsla(0,0%,0%,.25));
-    border: .2em solid transparent;
-    bottom: .5em;
-    border-radius: 100%;
-    cursor: pointer;
-    display: block;
-    height: .5em;
-    left: 24em;
-    opacity: 0;
-    position: absolute;
-    transition: .25s;
-    width: .5em;
-    visibility: hidden;
-    z-index: 10;
-}
-.slider label:after {
-    border-radius: 100%;
-    bottom: -.2em;
-    box-shadow: inset 0 0 0 .2em #111,
-                inset 0 2px 2px #000,
-                0 1px 1px hsla(0,0%,100%,.25);
-    content: '';
-    left: -.2em;
-    position: absolute;
-    right: -.2em;
-    top: -.2em;
-}
-.slider:hover label {
-    opacity: 1;
-    visibility: visible;
-}
-.slider input:checked + label {
-    background-color: #fff;
-}
-.slider:hover li:nth-child(1) label {
-  bottom: 3em;
-    left: .5em;
-}
-.slider:hover li:nth-child(2) label {
-    bottom: 3em;
-    left: 2em;
-}
-.slider:hover li:nth-child(3) label {
-    bottom: 3em;
-    left: 3.5em;
-}
-.slider:hover li:nth-child(4) label {
-    bottom: 3em;
-    left: 5em;
-}
-
-/* Images */
-
-.slider img {
-    height: 16em;
-    opacity: 0;
-    border-radius: 5px;
-    transition: .25s;
-    transform: translateY(-100%);
-    width: 31em;
-    vertical-align: top;
-    visibility: hidden;
-}
-.slider li input:checked ~ img {
-    opacity: 1;
-    visibility: visible;
-    z-index: 10;
+.profilemenu{
+  position: absolute;
+  margin-left: 1em;
+  width: 13.5em;
+  bottom: 10px;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 10px;
 }

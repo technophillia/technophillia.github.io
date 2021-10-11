@@ -17,23 +17,23 @@ function closeWindow(){
         elem.msRequestFullscreen();
       }
     }
-    function Check_next() {
-  	    var wanted = document.getElementsByName("slide"); /* "wanted" is an array from this point */
-  	    for (var i = 0; i < wanted.length; ++i) {
-  	        if (wanted[i].checked == true) {
-  	            if (i == wanted.length - 1) /* If the last radio is selected */
-  	            {
-  	                document.getElementsByName("slide")[0].checked = true;
-  	            } else {
-  	                document.getElementsByName("slide")[i + 1].checked = true;
-  	            }
-  	            break;
-  	        }
-  	    }
-
+    function Check_next(i) {
+			console.log(i)
+			if(i === 0){
+  	   document.getElementsByClassName('bigimgs')[0].src = "images/ghost.png"
+			 }
+			if (i === 1 ){
+				document.getElementsByClassName('bigimgs')[0].src = "images/fifa m8.png"
+			}
 
   	}
 
   	setInterval(function () {
-  	    Check_next()
+			console.log(document.getElementsByClassName('bigimgs')[0].src ===)
+			if (document.getElementsByClassName('bigimgs')[0].src ===  "https://technophillia.github.io/images/ghost.png"){
+  	    Check_next(1)
+				}
+			else if (document.getElementsByClassName('bigimgs')[0].src ===  "https://technophillia.github.io/images/fifa%20m8.png"){
+				Check_next(0)
+			}
   	}, 1000)
