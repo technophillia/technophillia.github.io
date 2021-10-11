@@ -29,7 +29,6 @@ function closeWindow(){
   	}
 
   	setInterval(function () {
-			console.log(document.getElementsByClassName('bigimgs')[0].src ===)
 			if (document.getElementsByClassName('bigimgs')[0].src ===  "https://technophillia.github.io/images/ghost.png"){
   	    Check_next(1)
 				}
