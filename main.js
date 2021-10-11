@@ -27,7 +27,7 @@ function closeWindow(){
 			if (i === 1 ){
 				$('#slider').fadeOut(10);
 				document.getElementsByClassName('bigimgs')[0].src = "images/fifa m8.png"
-				$('#slider').fadeIn(10);
+				$('#slider').fadeIn(1000);
 			}
 
   	}
