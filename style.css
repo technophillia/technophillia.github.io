@@ -523,7 +523,7 @@
   }
 }
 
-.banner:hover, .trinkle, h1{
+.banner:hover {
   animation:fadeout 2s 1;
   animation-fill-mode: forwards;
 }
