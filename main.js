@@ -19,17 +19,18 @@ function closeWindow(){
     }
     function Check_next(i) {
 			console.log(i)
+				$('#slider').fadeOut(10);
 			if(i === 0){
-			$('#slider').fadeOut(10);
+
   	   document.getElementsByClassName('bigimgs')[0].src = "images/ghost.png"
-			 $('#slider').fadeIn(10);
+
 			 }
 			if (i === 1 ){
-				$('#slider').fadeOut(10);
-				document.getElementsByClassName('bigimgs')[0].src = "images/fifa m8.png"
-				$('#slider').fadeIn(1000);
-			}
 
+				document.getElementsByClassName('bigimgs')[0].src = "images/fifa m8.png"
+
+			}
+			$('#slider').fadeIn(1000);
   	}
 
   	setInterval(function () {
@@ -39,4 +40,4 @@ function closeWindow(){
 			else if (document.getElementsByClassName('bigimgs')[0].src ===  "https://technophillia.github.io/images/fifa%20m8.png"){
 				Check_next(0)
 			}
-  	}, 1000)
+  	}, 3000)
