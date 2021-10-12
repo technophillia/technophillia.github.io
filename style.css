@@ -223,6 +223,7 @@
   .searchicon{
     max-width: 2.25%;
     float: right;
+    display: flex;
     background-color: rgba(0, 0, 0, 0.411);
     padding-top: 0.2em;
     padding-bottom: 5px;
