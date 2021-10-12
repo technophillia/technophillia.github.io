@@ -14,3 +14,4 @@ function closeWindow(){
         elem.msRequestFullscreen();
       }
     }
+  
