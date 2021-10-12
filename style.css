@@ -32,11 +32,7 @@
   }
   
   /* Handle on hover */
-  
-  img{
-      user-select: none;
-      -webkit-user-drag: none;
-  }
+
   .header{
     overflow:hidden;
     position: fixed;
@@ -510,3 +506,18 @@
   .row2Wrap {
       display: flex;
   }
+.logo{
+  max-width: 2%; padding-left: 1em; padding-top: 0.7em;  padding-right: 1px;
+}
+.logo:hover{
+  animation: rotation 3s infinite;
+
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

@@ -1,35 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
     <title>Aspect | Home</title>
-    <link rel="stylesheet" href="/style.css">
+
 </head>
-<body>
-    <center>
-    <a href="/"><img src="/images/neee.png" style="max-width: 1.6em; padding-right: 4em;"></a>
-    <a href="/playstation.html"><img src="/images/reee.png" style="max-width: 1.6em;  padding-right: 4em;"></a>
-    <a href="/xbox.html"><img src="/images/Vector (2).png" style="max-width: 1.4em; padding-right: 15em;"></a>
-    <img src="/images/logo.png" style="max-width: 2.5em; padding-left: 1em;" class="logo">
-    <a href="/community.html"><img src="/images/Vector (3).png" style="max-width: 1.4em;  padding-right: 4em; padding-left: 15em;"></a>
-    <a href="/settings.html"><img src="/images/Group 23.png" style="max-width: 1.4em;  padding-right: 9em;"></a>
-    <a href="/logout.html"><img src="/images/Ellipse 13.png" style="max-width:1.5em;"></a>
+<body onload="getEed()" style="background-image: url(/images/playstation-abstracto-8359.jpg);">
+    <!-- <div id="preloader">
+        <img src="images/logo.png" class="preloaderimg" style="max-width: 30%;">
+        <div class="name">
+            <span>
+                Aspect
+            </span>
+        </div>
+    </div> -->
 
-    </center>
-    <br>
-    <center><img src="/images/forja.png" style="max-width: 75em; align-items: center;"></center>
-    <br>
-    <h3 style="color: white; padding-left: 3em;">Newest releases</h3>
-    <img src="/images/apex 1.png" style="max-width: 8em; padding-left: 4em;"> 
-    <img src="/images/apex 1.png" style="max-width: 8em; padding-left: 4em;"> 
-    <img src="/images/apex 1.png" style="max-width: 8em; padding-left: 4em;"> 
-    <img src="/images/apex 1.png" style="max-width: 8em; padding-left: 4em;"> 
-    <img src="/images/apex 1.png" style="max-width: 8em; padding-left: 4em;"> 
-    <img src="/images/apex 1.png" style="max-width: 8em; padding-left: 4em;"> 
-   
+    <div class="header">
+    <a href="/"><img src="images/logo.png" class="logo" style="max-width: 2%; padding-left: 1em; padding-top: 0.7em;  padding-right: 1px;"></a>
+    <div style="float: right; top: 0;"> <a href="/"><img src="images/close.png" class="close" style="max-width: 8%;float: right; padding-top: 10px; padding-right: 30px;"></a>
+        <a href="#" onclick="openFullscreen()" id="maxwindow"><img src="images/full screen.png" style="float: right; padding-top: 10px; padding-right: 30px; max-width: 7%;"></a>
+        <a href="#" onclick="closeWindow(), alert('Window cant minmise because of security issues')"><img src="images/minmise.png" style="max-width: 7%;float: right; padding-top: 15px; padding-right: 30px;"></a></div>
+
+  </div>
+    <div class="navbar" style=" padding-top: 5%; height: 89vh;">
+
+      <ul>
+          <li style="border-radius:10px; border-top-left-radius: 0px; border-bottom-left-radius: 0px;" class="hvr-sweep-to-right "><div class="borderleft"></div><a href="/" class="bhendi"><i class="fas fa-home fa-lg" ></i><p class="navitem" style="padding-left: 0.8em;">  Home</p></a></li>
+          <li style="border-radius:10px;border-top-left-radius: 0px; border-bottom-left-radius: 0px;" class="hvr-sweep-to-right active"><a href="/playstation.html" class="bhendi "><i class="fab fa-playstation fa-lg" ></i><p class="navitem" style="padding-left: 0.8em;">  Playstation</p></a></li>
+          <li style="border-radius:25px;" class="hvr-sweep-to-right"><a href="" class="bhendi"><i class="fab fa-xbox fa-lg" ></i><p class="navitem" >  Xbox</p></a></li>
+          <li style="border-radius:25px;" class="hvr-sweep-to-right"><a href="" class="bhendi"><i class="far fa-heart fa-lg" ></i><p class="navitem" >  Community</p></a></li>
+          <li style="border-radius:25px;" class="hvr-sweep-to-right"><a href="" class="bhendi"><i class="fas fa-bullseye fa-lg" ></i><p class="navitem" >  Features</p></a></li>
+          <li style="border-radius:25px;" class="hvr-sweep-to-right"><a href="" class="bhendi"><i class="fas fa-cog fa-lg" ></i><p class="navitem" >  Settings</p></a></li>
+
+      </ul>
+      <div class="profilemenu">
+        <h3 style="
+    display: inline;
+    position: absolute;
+    right: 3.75em;
+    color: white;
+    top: 0.1em;
+    font-weight: 100;
+    font-size: 1em;
+"> Wusername </h3>
+<h3 style="display: inline;position: absolute;right: 1.25em;color: white;top: 2.1em;font-weight: 100;font-size: 0.75em;"> wusername@gmail.com </h3>
+          <img src="images/e.png" style="max-width:22%;align-items: center;padding-bottom: 3px;border-radius: 69%;padding: 0.35em;padding-top: 0.65em;padding-left: 0.75em;">
 
 
-</body>
-</html>
+        <div class="maincontent">
+            <h1></h1>
+        </div>
+      </div>
+    </div>

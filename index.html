@@ -15,7 +15,7 @@
     <title>Aspect | Home</title>
 
 </head>
-<body onload="getEed()">
+<body >
     <!-- <div id="preloader">
         <img src="images/logo.png" class="preloaderimg" style="max-width: 30%;">
         <div class="name">
@@ -26,8 +26,8 @@
     </div> -->
 
     <div class="header">
-    <a href="/"><img src="images/logo.png" style="max-width: 2%; padding-left: 1em; padding-top: 0.7em;  padding-right: 1px;"></a>
-    <div style="float: right; top: 0;"> <a href="/" onclick="closeWindow(), alert(&quot;window.close() is not working&quot;)"><img src="images/close.png" class="close" style="max-width: 8%;float: right; padding-top: 10px; padding-right: 30px;"></a>
+    <a href="/"><img src="images/logo.png" class="logo" ></a>
+    <div style="float: right; top: 0;"> <a href="/"><img src="images/close.png" class="close" style="max-width: 8%;float: right; padding-top: 10px; padding-right: 30px;"></a>
         <a href="#" onclick="openFullscreen()" id="maxwindow"><img src="images/full screen.png" style="float: right; padding-top: 10px; padding-right: 30px; max-width: 7%;"></a>
         <a href="#" onclick="closeWindow(), alert('Window cant minmise because of security issues')"><img src="images/minmise.png" style="max-width: 7%;float: right; padding-top: 15px; padding-right: 30px;"></a></div>
 
@@ -35,16 +35,16 @@
     <div class="navbar" style=" padding-top: 5%; height: 89vh;">
 
       <ul>
-          <li style="border-radius:10px; border-top-left-radius: 0px; border-bottom-left-radius: 0px;" class="hvr-sweep-to-right active"><div class="borderleft"></div><a href="/" class="bhendi"><i class="fas fa-home fa-lg" style=""></i><p class="navitem" style="padding-left: 0.8em;">  Home</p></a></li>
-          <li style="border-radius:25px;" class="hvr-sweep-to-right"><a href="" class="bhendi"><i class="fab fa-playstation fa-lg" style=""></i><p class="navitem" style="padding-left: 0.8em;">  Playstation</p></a></li>
-          <li style="border-radius:25px;" class="hvr-sweep-to-right"><a href="" class="bhendi"><i class="fab fa-xbox fa-lg" style=""></i><p class="navitem" style="    ">  Xbox</p></a></li>
-          <li style="border-radius:25px;" class="hvr-sweep-to-right"><a href="" class="bhendi"><i class="far fa-heart fa-lg" style=""></i><p class="navitem" style="    ">  Community</p></a></li>
-          <li style="border-radius:25px;" class="hvr-sweep-to-right"><a href="" class="bhendi"><i class="fas fa-bullseye fa-lg" style=""></i><p class="navitem" style="    ">  Features</p></a></li>
-          <li style="border-radius:25px;" class="hvr-sweep-to-right"><a href="" class="bhendi"><i class="fas fa-cog fa-lg" style=""></i><p class="navitem" style="    ">  Settings</p></a></li>
+          <li style="border-radius:10px; border-top-left-radius: 0px; border-bottom-left-radius: 0px;" class="hvr-sweep-to-right active"><div class="borderleft"></div><a href="/" class="bhendi"><i class="fas fa-home fa-lg" ></i><p class="navitem" style="padding-left: 0.8em;">  Home</p></a></li>
+          <li style="border-radius:25px;" class="hvr-sweep-to-right"><a href="/playstation.html" class="bhendi"><i class="fab fa-playstation fa-lg" ></i><p class="navitem" style="padding-left: 0.8em;">  Playstation</p></a></li>
+          <li style="border-radius:25px;" class="hvr-sweep-to-right"><a href="" class="bhendi"><i class="fab fa-xbox fa-lg" ></i><p class="navitem" >  Xbox</p></a></li>
+          <li style="border-radius:25px;" class="hvr-sweep-to-right"><a href="" class="bhendi"><i class="far fa-heart fa-lg" ></i><p class="navitem" >  Community</p></a></li>
+          <li style="border-radius:25px;" class="hvr-sweep-to-right"><a href="" class="bhendi"><i class="fas fa-bullseye fa-lg" ></i><p class="navitem">  Features</p></a></li>
+          <li style="border-radius:25px;" class="hvr-sweep-to-right"><a href="" class="bhendi"><i class="fas fa-cog fa-lg" ></i><p class="navitem" >  Settings</p></a></li>
 
       </ul>
       <div class="profilemenu">
-        <h3 style="
+       <a href="/profile.html"> <h3 style="
     display: inline;
     position: absolute;
     right: 3.75em;
@@ -56,12 +56,12 @@
 <h3 style="display: inline;position: absolute;right: 1.25em;color: white;top: 2.1em;font-weight: 100;font-size: 0.75em;"> wusername@gmail.com </h3>
           <img src="images/e.png" style="max-width:22%;align-items: center;padding-bottom: 3px;border-radius: 69%;padding: 0.35em;padding-top: 0.65em;padding-left: 0.75em;">
 
-
+</a>
 
       </div>
     </div>
 
-    <div class="maincontent" style="">
+    <div class="maincontent" >
         <p style="color: white; font-size: x-large; padding-right: 10px; display:inline; font-weight:200;">Play Now
           </p><div class="rightthings">
 
@@ -83,11 +83,11 @@
     /* padding-right: 0.5em; */
     border-radius: 5px;
 ">
-              <div style="background-image: url(&quot;images/fifa m8.png&quot;);" class="show"></div>
-              <div style="background-image: url(&quot;images/ghost.png&quot;); display: none;" class=""></div>
+              <div style="background-image: url(images/fifa\ m8.png);" class="show"></div>
+              <div style="background-image: url(images/ghost.png); display: none;" class=""></div>
 
-              <div style="background-image: url(&quot;images/demn.png&quot;); display: none;" class=""></div>
-              <div style="background-image: url(&quot;images/sike.png&quot;); display: none;" class=""></div>
+              <div style="background-image: url(images/demn.png); display: none;" class=""></div>
+              <div style="background-image: url(images/sike.png); display: none;" class=""></div>
               <i class="left" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100">
                       <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path>
                   </svg></i>
@@ -103,11 +103,8 @@
         <img class="smallimgs" src="images/gtal.png">
         <div id="fifa">
 
-            <img class="bigimgs" src="images/demn.png" style="max-">
-            <div class="bottom-right" style="
-            bottom: 4px;
-        left: 0.2em;
-"><span>COMING SOON</span></div>
+            <img class="bigimgs" src="images/demn.png" >
+            <div class="bottom-right" style="bottom: 4px; left: 0.2em;"><span>COMING SOON</span></div>
           </div>
         <br>
         <!-- <img class="smallimgs2" src="images/apex.png" >
