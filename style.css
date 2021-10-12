@@ -523,7 +523,7 @@
   }
 }
 
-.banner:hover{
+.banner:hover, .trinkle, h1{
   animation:fadeout 2s 1;
   animation-fill-mode: forwards;
 }
@@ -535,8 +535,8 @@
 
 
 #background-video {
-  width: 100vw;
-  height: 100vh;
+  width: fit-content;
+  height: fit-content;
   object-fit: cover;
   position: fixed;
   left: 0;
@@ -548,8 +548,8 @@
 }
 
 .banner:hover + #background-video {
-  transition-delay: 1s;
-  animation:visible 2s ;
+  transition-delay: 0s;
+  animation:visible 1.6s ;
 
   animation-fill-mode: forwards;
 }
