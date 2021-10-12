@@ -6,7 +6,7 @@
   body{
     height: 100vh;
 
-      background-image: url(images/mc3.png);
+      background-image: url(images/hitdemn.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       overflow: hidden;
@@ -548,7 +548,27 @@
   z-index: -1;
   opacity: 0%;
 }
+#hitman-vid{
+  
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0%;
 
+}
+.hitman:hover{
+  animation:fadeout 2s 1;
+  animation-fill-mode: forwards;
+}
+.hitman:hover + #hitmanvid{
+  transition-delay: 0s;
+  animation:visible 1.6s ;
+  animation-fill-mode: forwards;
+}
 .banner:hover + #background-video {
   transition-delay: 0s;
   animation:visible 1.6s ;
@@ -562,4 +582,7 @@
   to{
     opacity: 100%;
   }
+}
+.bruhme{
+  
 }
