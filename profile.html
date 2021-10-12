@@ -1,16 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head >
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="main.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- CSS only -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/logo.png" type="image/png">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
     <title>Aspect | Home</title>
+    <style>
+    ::-webkit-scrollbar-track {
+        background: transparent !important; /* make scrollbar transparent */
+        width: 0px;
+    }
+    </style>
 </head>
 <body onload="getEed()" style="background-image:url(images/BG\ \(1\).png)">
     <!-- <div id="preloader">
@@ -23,70 +28,297 @@
     </div> -->
     <div class="header">
     <a href="/"><img src="images/logo.png" style="max-width: 2%; padding-left: 1em; padding-top: 0.7em; padding-bottom: 3em; padding-right: 1px;"></a>
-    <div style="float: right; top: 0;"> <a href="/" onclick='closeWindow(), alert("window.close() is not working")'><img src="images/close.png" class="close" style="max-width: 8%;float: right; padding-top: 10px; padding-right: 30px;"></a>
+    <div style="float: right; top: 0;"> <a href="/" onclick="closeWindow(), alert(&quot;window.close() is not working&quot;)"><img src="images/close.png" class="close" style="max-width: 8%;float: right; padding-top: 10px; padding-right: 30px;"></a>
         <a href="#" onclick="openFullscreen()" id="maxwindow"><img src="images/full screen.png" style="float: right; padding-top: 10px; padding-right: 30px; max-width: 7%;"></a>
         <a href="#" onclick="closeWindow(), alert('Window cant minmise because of security issues')"><img src="images/minmise.png" style="max-width: 7%;float: right; padding-top: 15px; padding-right: 30px;"></a></div>
 
   </div>
-    <div class= "navbar" style=" padding-top: 5%;">
-      <ul>
-          <li style="border-radius:10px; border-top-left-radius: 0px; border-bottom-left-radius: 0px;" class="hvr-sweep-to-right "><div class="borderleft"></div><a href="/" ><i class="fas fa-home fa-lg" style=""></i><p class="navitem" style="padding-left: 0.8em;">  Home</p></a></li>
-          <li style="border-radius:25px;" class="hvr-sweep-to-right"><a href="" class="bhendi"><i class="fab fa-playstation fa-lg" style=""></i><p class="navitem" style="padding-left: 0.8em;">  Playstation</p></a></li>
-          <li style="border-radius:25px;" class="hvr-sweep-to-right"><a href="" class="bhendi"><i class="fab fa-xbox fa-lg" style=""></i><p class="navitem" style="    ">  Xbox</p></a></li>
-          <li style="border-radius:25px;" class="hvr-sweep-to-right"><a href="" class="bhendi"><i class="far fa-heart fa-lg" style=""></i><p class="navitem" style="    ">  Community</p></a></li>
-          <li style="border-radius:25px;" class="hvr-sweep-to-right"><a href="" class="bhendi"><i class="fas fa-bullseye fa-lg" style=""></i><p class="navitem" style="    ">  Features</p></a></li>
-          <li style="border-radius:25px;" class="hvr-sweep-to-right"><a href="" class="bhendi"><i class="fas fa-cog fa-lg" style=""></i><p class="navitem" style="    ">  Settings</p></a></li>
-      <div style="padding-top: 200px;">
-          <li style="border-radius:25px; background-color: rgba(0, 0, 0, 0.534); " class="hvr-sweep-to-right"><a href="/profile" class="bhendi"><img src="images/e.png" style="max-width: 10%; align-items: center; padding-bottom: 3px; border-radius: 69%;"><p class="navitem" style="color: #fc6666;">  Wusername<br><i class="fas fa-star" style="color: #66fcf1;"></i>&ThickSpace; Level 96</p></a></li>
-</div>
-      </ul>
+  <div class="navbar" style="padding-top: 5%;height: 87vh;">
+
+    <ul>
+        <li style="border-radius:10px; border-top-left-radius: 0px; border-bottom-left-radius: 0px;" class="hvr-sweep-to-right active"><div class="borderleft"></div><a href="/" class="bhendi"><i class="fas fa-home fa-lg" style=""></i><p class="navitem" style="padding-left: 0.8em;">  Home</p></a></li>
+        <li style="border-radius:25px;" class="hvr-sweep-to-right"><a href="" class="bhendi"><i class="fab fa-playstation fa-lg" style=""></i><p class="navitem" style="padding-left: 0.8em;">  Playstation</p></a></li>
+        <li style="border-radius:25px;" class="hvr-sweep-to-right"><a href="" class="bhendi"><i class="fab fa-xbox fa-lg" style=""></i><p class="navitem" style="    ">  Xbox</p></a></li>
+        <li style="border-radius:25px;" class="hvr-sweep-to-right"><a href="" class="bhendi"><i class="far fa-heart fa-lg" style=""></i><p class="navitem" style="    ">  Community</p></a></li>
+        <li style="border-radius:25px;" class="hvr-sweep-to-right"><a href="" class="bhendi"><i class="fas fa-bullseye fa-lg" style=""></i><p class="navitem" style="    ">  Features</p></a></li>
+        <li style="border-radius:25px;" class="hvr-sweep-to-right"><a href="" class="bhendi"><i class="fas fa-cog fa-lg" style=""></i><p class="navitem" style="    ">  Settings</p></a></li>
+
+    </ul>
+    <div class="profilemenu">
+      <h3 style="
+  display: inline;
+  position: absolute;
+  right: 3.75em;
+  color: white;
+  top: 0.1em;
+  font-weight: 100;
+  font-size: 1em;
+"> Wusername </h3>
+<h3 style="display: inline;position: absolute;right: 1.25em;color: white;top: 2.1em;font-weight: 100;font-size: 0.75em;"> wusername@gmail.com </h3>
+        <img src="images/e.png" style="max-width:22%;align-items: center;padding-bottom: 3px;border-radius: 69%;padding: 0.35em;padding-top: 0.65em;padding-left: 0.75em;">
+
+
+
     </div>
+  </div>
 
-    <div class="maincontent" style=" background: #0b0c1063;  border-radius: 20px;">
-        <h2 style="color: white; padding-top: 1px; padding-left: 20px;"><strong>User Profile</strong>
-        </h2>
-<img src="images/wiqhe.png" style="max-width: 14%; padding-left: 30px;">
-<span style="color: white; float: right; font-size: 18px; padding-right:215px; padding-top: 35px;">Wallet balance<br><span style="color: #66fcf1; padding-left: 7px; padding-top: 15px;"><strong>₹412</strong>&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;<a href="https://www.youtube.com/watch?v=Dx5i1t0mN78"><i class="fas fa-plus"></i></a></span></span>
-<span style="color: white; float: right; font-size: 18px; padding-right: 40px; padding-top: 35px;">Last Game Bought<br><span style="color:white;padding-left: 7px; padding-top: 15px;"><strong>Fifa 22</strong></span></span>
+    <div class="maincontent" style="background: #0b0c1063;border-radius: 20px;max-height: 86vh; overflow:hidden;">
+        <h2 style="color: white;padding-top: 1px;padding-left: 1.1em;font-weight: 200;">User Profile</h2>
+        <img src="images/wiqhe.png" style="max-width: 14%; padding-left: 30px;">
+        <div class="userdetails">
+          <p class="detailed" style="top: 5em;left: 10.9em;">Nickname</p>
+          <p class="detailss" style="top: 4.5em;left: 7.5em;">Wusername</p>
+          <p class="detailed" style="top: 5em;left: 21.9em;">Last Game Bought</p>
+          <p class="detailss" style="top: 4.5em;left: 15em;">Fifa 22</p>
+          <p class="detailed" style="top: 5em;left: 32.9em;">Wallet Balance</p>
+          <p class="detailss" style="top: 4.5em;left: 22.75em;color: #66fcf1;">₹ 0
 
-<span style="color: white; float: right; font-size: 18px; padding-right: 40px; padding-top: 35px;">Nickname<br><span style="color: white; padding-left: 7px; padding-top: 15px;"><strong>Wusername</strong></span></span>
-<br><br><br><h3 style="color: white; padding-left: 30px;">Recent Transactions<span style="float: right; padding-right: 7%;">Games</span></h3>
-<img src="images/sike.png" style="max-width: 50%; float: right; padding-right: 3%; padding-bottom: 6.9%;">
 
-<div style="padding-left: 30px; width: 40%;">
-    <div style="background-color: #1f28338e;">
-         <p style="color: white; padding-left: 10px; padding-top: 10px; font-size: small;">9/10/21 - 13:32<span style="color: white; float: right; padding-right: 10px; font-size: medium;">Sucessful</span></p>
-         <p style="color: white; font-size: x-large; padding-left: 12px;">Fifa 22<span style="color: #66fcf1; float: right; padding-right: 10px; ">Rs 1069</span></p>
-    <p style="padding-top: 1px;"></p>
+</p>
+      </div>
+
+        <div class="transactionsdiv">
+            <h3 style="color: white;padding-left: 30px;font-weight: 200;top: 0px;">Recent Transactions </h3>
+            <div class="transactions">
+              <div style="padding-left: 2em;width: 94%;">
+                  <div style="background-color: #1f28338e;">
+                       <p style="color: white;padding-left: 1em;padding-top: 10px;font-size: 0.75em;margin-top: 0;">9/10/21 - 13:32<span style="color: white;float: right;padding-right: 10px;font-size: 1em;">Sucessful</span></p>
+                       <p style="color: white;font-size: 1.5em;font-weight: 600;padding-left: 0.5em;margin: 0;/* padding: 0; */">Fifa 22<span style="color: #66fcf1; float: right; padding-right: 10px; ">Rs 2340</span></p>
+                  <p style="padding-top: 1px;"></p>
+                      </div>
+
+              </div>
+              <div style="padding-left: 2em;width: 94%;">
+                  <div style="background-color: #1f28338e;">
+                       <p style="color: white;padding-left: 1em;padding-top: 10px;font-size: 0.75em;margin-top: 0;">9/10/21 - 13:32<span style="color: white;float: right;padding-right: 10px;font-size: 1em;">Sucessful</span></p>
+                       <p style="color: white;font-size: 1.5em;font-weight: 600;padding-left: 0.5em;margin: 0;/* padding: 0; */">Fifa 22<span style="color: #66fcf1; float: right; padding-right: 10px; ">Rs 2340</span></p>
+                  <p style="padding-top: 1px;"></p>
+                      </div>
+
+              </div>
+              <div style="padding-left: 2em;width: 94%;">
+                  <div style="background-color: #1f28338e;">
+                       <p style="color: white;padding-left: 1em;padding-top: 10px;font-size: 0.75em;margin-top: 0;">9/10/21 - 13:32<span style="color: white;float: right;padding-right: 10px;font-size: 1em;">Sucessful</span></p>
+                       <p style="color: white;font-size: 1.5em;font-weight: 600;padding-left: 0.5em;margin: 0;/* padding: 0; */">Fifa 22<span style="color: #66fcf1; float: right; padding-right: 10px; ">Rs 2340</span></p>
+                  <p style="padding-top: 1px;"></p>
+                      </div>
+
+              </div>
+              <div style="padding-left: 2em;width: 94%;">
+                  <div style="background-color: #1f28338e;">
+                       <p style="color: white;padding-left: 1em;padding-top: 10px;font-size: 0.75em;margin-top: 0;">9/10/21 - 13:32<span style="color: white;float: right;padding-right: 10px;font-size: 1em;">Sucessful</span></p>
+                       <p style="color: white;font-size: 1.5em;font-weight: 600;padding-left: 0.5em;margin: 0;/* padding: 0; */">Fifa 22<span style="color: #66fcf1; float: right; padding-right: 10px; ">Rs 2340</span></p>
+                  <p style="padding-top: 1px;"></p>
+                      </div>
+
+              </div>
+              <div style="padding-left: 2em;width: 94%;">
+                  <div style="background-color: #1f28338e;">
+                       <p style="color: white;padding-left: 1em;padding-top: 10px;font-size: 0.75em;margin-top: 0;">9/10/21 - 13:32<span style="color: white;float: right;padding-right: 10px;font-size: 1em;">Sucessful</span></p>
+                       <p style="color: white;font-size: 1.5em;font-weight: 600;padding-left: 0.5em;margin: 0;/* padding: 0; */">Fifa 22<span style="color: #66fcf1; float: right; padding-right: 10px; ">Rs 2340</span></p>
+                  <p style="padding-top: 1px;"></p>
+                      </div>
+
+              </div>
+              <div style="padding-left: 2em;width: 94%;">
+                  <div style="background-color: #1f28338e;">
+                       <p style="color: white;padding-left: 1em;padding-top: 10px;font-size: 0.75em;margin-top: 0;">9/10/21 - 13:32<span style="color: white;float: right;padding-right: 10px;font-size: 1em;">Sucessful</span></p>
+                       <p style="color: white;font-size: 1.5em;font-weight: 600;padding-left: 0.5em;margin: 0;/* padding: 0; */">Fifa 22<span style="color: #66fcf1; float: right; padding-right: 10px; ">Rs 2340</span></p>
+                  <p style="padding-top: 1px;"></p>
+                      </div>
+
+              </div>
+              <div style="padding-left: 2em;width: 94%;">
+                  <div style="background-color: #1f28338e;">
+                       <p style="color: white;padding-left: 1em;padding-top: 10px;font-size: 0.75em;margin-top: 0;">9/10/21 - 13:32<span style="color: white;float: right;padding-right: 10px;font-size: 1em;">Sucessful</span></p>
+                       <p style="color: white;font-size: 1.5em;font-weight: 600;padding-left: 0.5em;margin: 0;/* padding: 0; */">Fifa 22<span style="color: #66fcf1; float: right; padding-right: 10px; ">Rs 2340</span></p>
+                  <p style="padding-top: 1px;"></p>
+                      </div>
+
+              </div>
+            </div>
+
+
         </div>
+        <div class="gamesdiv" style="
+    margin-top: 3em;
+    display: inline-block;
+    width: 47%;
+    float: right;
+    padding-right: 28px;
+">
+            <h3 style="color: white;font-weight: 200;">Games</h3>
+            <div class="transactions">
+<div class="slider" id="slider1">
+    <div style="background-image: url('images/fifa m8.png'); display: none;" class=""></div>
+    <div style="background-image: url('images/ghost.png'); display: none;" class=""></div>
+    <div style="background-image: url('images/apex.png');" class="show"></div>
+    <div style="background-image: url('images/demn.png'); display: none;" class=""></div>
+    <div style="background-image: url('images/sike.png'); display: none;" class=""></div>
+    <i class="left" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100">
+            <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path>
+        </svg></i>
+    <i class="right" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100">
+            <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180) "></path>
+        </svg></i>
+></div>
+
+<br>
+
+<div class="row2Wrap">
+
+
+
+
+
 
 </div>
 
-<!-- <p style="font-size: xx-large; color: white;  padding-right: 2%; float: right;   position:relative; display: inline;">Games</p><br> -->
-<!-- <h4 style="color: white; float: right; padding-right: 3%;">Games</h4><br> -->
 
-<div style="padding-left: 30px; width: 40%;">
+            </div>
 
 
-    <div style="background-color: #1f28338e;">
-         <p style="color: white; padding-left: 10px; padding-top: 10px; font-size: small;">9/10/21 - 13:32<span style="color: white; float: right; padding-right: 10px; font-size: medium;">Sucessful</span></p>
-         <p style="color: white; font-size: x-large; padding-left: 12px;">Fifa 22<span style="color: #66fcf1; float: right; padding-right: 10px; ">Rs 1069</span></p>
-    <p style="padding-top: 1px;"></p>
         </div>
+
 
 </div>
-<div style="padding-left: 30px; width: 40%;">
-    <div style="background-color: #1f28338e;">
-         <p style="color: white; padding-left: 10px; padding-top: 10px; font-size: small;">9/10/21 - 13:32<span style="color: white; float: right; padding-right: 10px; font-size: medium;">Sucessful</span></p>
-         <p style="color: white; font-size: x-large; padding-left: 12px;">Fifa 22<span style="color: #66fcf1; float: right; padding-right: 10px; ">Rs 1069</span></p>
-    <p style="padding-top: 1px;"></p>
+
+<script>
+
+(function($) {
+  "use strict";
+  $.fn.sliderResponsive = function(settings) {
+
+    var set = $.extend(
+      {
+        slidePause: 5000,
+        fadeSpeed: 800,
+        autoPlay: "on",
+        showArrows: "off",
+        hideDots: "off",
+        hoverZoom: "on",
+        titleBarTop: "off"
+      },
+      settings
+    );
+
+    var $slider = $(this);
+    var size = $slider.find("> div").length;
+    var position = 0;
+    var sliderIntervalID;
+
+    $slider.append("<ul></ul>");
+    $slider.find("> div").each(function(){
+      $slider.find("> ul").append('<li></li>');
+    });
+
+    $slider.find("div:first-of-type").addClass("show");
+
+    $slider.find("li:first-of-type").addClass("showli")
+
+    $slider.find("> div").not(".show").fadeOut();
+
+    if (set.autoPlay === "on") {
+        startSlider();
+    }
+
+    if (set.showArrows === "on") {
+        $slider.addClass('showArrows');
+    }
+
+    if (set.hideDots === "on") {
+        $slider.addClass('hideDots');
+    }
+
+    if (set.hoverZoom === "off") {
+        $slider.addClass('hoverZoomOff');
+    }
+
+    if (set.titleBarTop === "on") {
+        $slider.addClass('titleBarTop');
+    }
+
+    function startSlider() {
+      sliderIntervalID = setInterval(function() {
+        nextSlide();
+      }, set.slidePause);
+    }
+
+    $slider.mouseover(function() {
+      if (set.autoPlay === "on") {
+        clearInterval(sliderIntervalID);
+      }
+    });
+
+    $slider.mouseout(function() {
+      if (set.autoPlay === "on") {
+        startSlider();
+      }
+    });
+
+    $slider.find("> .right").click(nextSlide)
+
+    $slider.find("> .left").click(prevSlide);
+
+    function nextSlide() {
+      position = $slider.find(".show").index() + 1;
+      if (position > size - 1) position = 0;
+      changeCarousel(position);
+    }
 
 
-        </div>
-    <style>
-    </style>
+    function prevSlide() {
+      position = $slider.find(".show").index() - 1;
+      if (position < 0) position = size - 1;
+      changeCarousel(position);
+    }
+
+    $slider.find(" > ul > li").click(function() {
+      position = $(this).index();
+      changeCarousel($(this).index());
+    });
+
+    function changeCarousel() {
+      $slider.find(".show").removeClass("show").fadeOut();
+      $slider
+        .find("> div")
+        .eq(position)
+        .fadeIn(set.fadeSpeed)
+        .addClass("show");
+      // The Dots
+      $slider.find("> ul").find(".showli").removeClass("showli");
+      $slider.find("> ul > li").eq(position).addClass("showli");
+    }
+
+    return $slider;
+  };
+})(jQuery);
 
 
 
-</body>
-</html>
+$(document).ready(function() {
+
+  $("#slider1").sliderResponsive({
+
+  });
+
+  $("#slider2").sliderResponsive({
+    fadeSpeed: 300,
+    autoPlay: "off",
+    showArrows: "on",
+    hideDots: "on"
+  });
+
+  $("#slider3").sliderResponsive({
+    hoverZoom: "off",
+    hideDots: "on"
+  });
+
+});
+
+
+</script>
+
+
+
+</body></html>
