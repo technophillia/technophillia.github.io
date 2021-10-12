@@ -14,8 +14,3 @@ function closeWindow(){
         elem.msRequestFullscreen();
       }
     }
-    $(".banner").hover(function () {
-      $("#background-video")[0].play();
-   }, function () {
-       $("#background-video")[0].pause();
-   });
