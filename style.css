@@ -550,7 +550,6 @@
 .banner:hover + #background-video {
   transition-delay: 1s;
   animation:visible 2s ;
-  
 	
   animation-fill-mode: forwards;
 }
