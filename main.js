@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 function getEed(){
 	setTimeout(function(getEed){ alert("Use fullscreen for the best experience"); }, 100);
@@ -41,3 +42,5 @@ function closeWindow(){
 				Check_next(0)
 			}
   	}, 3000)
+=======
+>>>>>>> Stashed changes
