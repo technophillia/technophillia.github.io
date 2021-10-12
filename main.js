@@ -19,7 +19,7 @@ function closeWindow(){
     }
     function Check_next(i) {
 			console.log(i)
-				$('#slider').fadeOut(10);
+				$('#slider').fadeOut(1000);
 			if(i === 0){
 
   	   document.getElementsByClassName('bigimgs')[0].src = "images/ghost.png"
@@ -30,7 +30,7 @@ function closeWindow(){
 				document.getElementsByClassName('bigimgs')[0].src = "images/fifa m8.png"
 
 			}
-			$('#slider').fadeIn(1000);
+			$('#slider').fadeIn();
   	}
 
   	setInterval(function () {
