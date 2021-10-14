@@ -636,3 +636,27 @@
     max-width: 9em;
   }
 }
+.expend3:hover{
+  animation:incsize3 1s 1;
+  animation-fill-mode: forwards;
+}
+@keyframes incsize3{
+    from{
+      max-width: 20%;
+    }
+    to{
+      max-width: 20.5%;
+    }
+}
+.expend3{
+  animation:reverse4 1s 1;
+    animation-fill-mode: forwards;
+}
+@keyframes reverse4{
+    from{
+      max-width: 20.5%;
+    }
+    to{
+      max-width: 20%;
+    }
+}
