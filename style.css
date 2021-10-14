@@ -586,3 +586,53 @@
 .bruhme{
   
 }
+.expend:hover{
+  animation:incsize 1s 1;
+  animation-fill-mode: forwards;
+}
+@keyframes incsize{
+    from{
+      max-width: 17em;
+    }
+    to{
+      max-width: 17.6em;
+    }
+}
+.expend{
+  animation:reverse3 1s 1;
+  animation-fill-mode: forwards;
+}
+@keyframes reverse3 {
+  
+  from{
+    max-width: 17.6em;
+  }
+  to{
+    max-width: 17em;
+  }
+}
+.expend2:hover{
+  animation: incsize2 1s 1;
+  animation-fill-mode: forwards;
+}
+@keyframes incsize2{
+    from{
+      max-width: 9em;
+    }
+    to{
+      max-width: 9.5em;
+    }
+}
+.expend2{
+  animation:reverse2 1s 1;
+  animation-fill-mode: forwards;
+}
+@keyframes reverse2{
+  from{
+    max-width: 9.5em;
+
+  }
+  to{
+    max-width: 9em;
+  }
+}
