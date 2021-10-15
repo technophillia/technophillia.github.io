@@ -61,36 +61,38 @@
       </div>
     </div>
 <div class="bruhmomento">
-    <div class="maincontent" style="background-color:rgba(0, 0, 0, 0.548); color: white; border-radius: 1em;" >
-     
+    <div class="maincontent" style="background-color:rgba(0, 0, 0, 0.699); color: white; border-radius: 1em;" ><center><br><br>
+        <div class="slider" id="slider1" style="
+        display: inline-block;
+        /* margin-top: 0.1em; */
+        max-width: 30em;
+        margin-left: 0.2em;
+        /* padding-right: 0.5em; */
+        border-radius: 5px;
+        text-align: center;
+        justify-content: center;
+    ">
+                  <div style="background-image: url(images/betmen.jpg);" class="show"></div>
+                  <div style="background-image: url(images/cyberrrr.jpg); display: none;" class=""></div>
+    
+                  <div style="display: none;" class=""><video src="images/cyberboi.mp4" style="width: 100%;" controls></video></div>
+                  <div style="background-image: url(images/thumb-1920-157265.jpg); display: none;" class=""></div>
+                  <i class="left" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100">
+                          <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path>
+                      </svg></i>
+                  <i class="right" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100">
+                          <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180) "></path>
+                      </svg></i></div></center>
+                      <h1 style="color: white; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; padding-left: 1em;">Cyberpunk 2077<span style=" border-radius:0.2em; font-size: 0.6em; float: right; padding-top: 0.5em; padding-bottom: 0.5em; padding-right: 2em; padding-left: 0.3em;"><a href="https://www.youtube.com/watch?v=tmY-G6sngk8">Buy Now</a> </span></h1>
+                      <p style="color: rgba(211, 211, 211, 0.589); padding-left: 4em;">Action. Role-playing.</p>
+                      <p style="color: white; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; padding-right: 1em; padding-left: 3em; ">
+                        Cyberpunk 2077 is an action role-playing video game developed and published by CD Projekt. The story takes place in Night City, an open world set in the Cyberpunk universe. Players assume the first-person perspective of a customisable mercenary known as V, who can acquire skills in hacking and machinery with options for melee and ranged combat.
+                      </p>
+                
     </div>
+    
 </div>
 <script>
-$(".banner").hover(function () {
-$("#background-video")[0].autoplay = true;
-  $("#background-video")[0].play();
-}, function () {
-  $("#background-video")[0].autoplay = false;
-   $("#background-video")[0].pause();
-});
-
-</script>
-<script>
-function Check_next(i) {
-  console.log(i)
-    $('#slider').fadeOut(1000);
-  if(i === 0){
-
-   document.getElementsByClassName('bigimgs')[0].src = "images/ghost.png"
-
-   }
-  if (i === 1 ){
-
-    document.getElementsByClassName('bigimgs')[0].src = "images/fifa m8.png"
-
-  }
-  $('#slider').fadeIn();
-}
 
 
 </script>
@@ -104,8 +106,7 @@ function Check_next(i) {
     var set = $.extend(
       {
         slidePause: 5000,
-        fadeSpeed: 800,
-        autoPlay: "on",
+        autoPlay: "off",
         showArrows: "off",
         hideDots: "off",
         hoverZoom: "on",

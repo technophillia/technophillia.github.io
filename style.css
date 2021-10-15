@@ -168,7 +168,7 @@
 
   width: 16em;
 
-  height: 2.5em;
+  height: 21em;
 
   background: rgb(19,19,19);
 
@@ -275,7 +275,6 @@
     display: inline-block;
     padding-bottom: 1em;
     width: 50%;
-    max-height: 42.5vh;
   }
   .transactionsdiv::-webkit-scrollbar {
       background: transparent; /* make scrollbar transparent */
@@ -303,7 +302,6 @@
       background-position: center center;
       display: block;
       width: 100%;
-      height: 16.25em;
       position: relative;
       background-size: cover;
       background-repeat: no-repeat;
@@ -313,10 +311,6 @@
       -o-transition: transform .4s;
       -webkit-transition: transform .4s;
       transition: transform .4s;
-  }
-
-  .slider > div {
-      position: absolute;
   }
 
   .slider > i {
