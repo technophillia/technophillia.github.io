@@ -1,0 +1,662 @@
+@font-face {
+    font-family: "Subatomic";
+    font-weight: 400;
+    src: url("subatomic.tsoonami.ttf");
+  }
+  body{
+    height: 100vh;
+
+      background-image: url(images/hitdemn.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: hidden;
+
+      font-family:  "Roboto";
+  }
+
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #727272;
+    border-radius: 50px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background: #66FCF1;
+  }
+
+  /* Handle on hover */
+
+  .header{
+    overflow:hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+  }
+  .xboxboi{
+    background-image: url(/images/xboxb.png);
+    background-repeat: no-repeat;
+    background-size: 95%;
+  }
+
+  .navbar{
+    width: 300px;
+    float: left;
+    overflow-y: hidden;
+    position: fixed;
+
+  }
+  .navbar ul{
+   padding-left: 0;
+   list-style-type: none;
+   display: inline-block;
+      overflow-y: hidden;
+  }
+  .navbar ul li{
+    width: 17em;
+      overflow-y: hidden;
+      margin-left: 1em;
+    font-size:13px;
+  }
+  a:link{
+    text-decoration: none;
+    color: white;
+
+  }
+  a:visited{
+    text-decoration: none;
+    color: white;
+  }
+  .navbar ul li a{
+    padding-left: 3em;
+    color: white;
+    text-decoration: none;
+  }
+  .navitem{
+    display:inline-block;
+    padding-left: 1em;
+  }
+  .maincontent{
+    overflow:hidden;
+    overflow-y: scroll;
+  width: 73.25%;
+  position: absolute;
+  top:10% ;
+  left: 24%;
+  max-height: 90vh;
+
+  }
+
+  .bottomleft{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  .smallimgs1{
+    max-width: 20.35%;
+    padding-right: 5px;
+  }
+  .smallimgs{
+    max-width: 20.35%;
+  }
+
+  .smallimgs2{
+    max-width: 20.35%; padding-right: 5px;
+  }
+  .bigimgs{
+    margin-bottom: 9em;
+    padding-left: 0.2em;
+    max-width: 52.25% !important;
+    border-radius: 5px;
+    margin: 0;
+    margin-bottom: 0.2em;
+  }
+
+  @keyframes fadeInLeft {
+     0% {
+        opacity: 0;
+        transform: translateX(-20px);
+     }
+     100% {
+        opacity: 1;
+        transform: translateX(0);
+     }
+  }
+
+  #fifa{
+    display: inline;
+    /* height: 20px; */
+    position: relative;
+  }
+  #fifa .bottom-right{
+    z-index: 96;
+    display: flex;
+    border-bottom-left-radius: 5px;
+    -webkit-animation-name: fadeInLeft;
+    transition: left 2s;
+    -moz-animation-name: fadeInLeft;
+    -o-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 0.35s;
+    -moz-animation-duration: 0.35s;
+    -o-animation-duration: 0.35s;
+    animation-duration: 0.35s;
+    -webkit-animation-delay: 0.35s;
+    -moz-animation-delay: 0.35s;
+    -o-animation-duration:0.35s;
+    animation-delay: 0.35s;
+  }
+  .active{
+
+    background-color:rgba(0,0,0,0.5);
+    border-left: 4px solid #66fcf1;
+  }
+  .bottom-right {
+
+  position: absolute;
+
+  width: 16em;
+
+  height: 2.5em;
+
+  background: rgb(19,19,19);
+
+  background: linear-gradient(
+    90deg, rgba(19,19,19,1) 0%, rgba(196,196,196, 0.25) 100%);
+
+  bottom: 4px;
+
+  left: 0.15em;
+
+  align-items: center;
+
+  color: white;
+
+  text-transform: capitalize;
+  }
+  .bottom-right span{
+    padding-left: 1.2em;
+    font-family: "San Francisco";
+    font-size: 0.75em;
+    /* font-weight: bold; */
+  }
+  .bottom-right{
+    display: none;
+  }
+  ::placeholder {
+    color: #fff;
+    opacity: 0.7;
+  }
+
+
+  ::placeholder {
+    color: #fff;
+  }
+
+  ::-webkit-input-placeholder {
+    color: #fff;
+  }
+
+  :-ms-input-placeholder {
+    color: #fff;
+  }
+  .searchbar{
+    float: right;
+    background-color: rgba(0, 0, 0, 0.411);
+    border: none;
+     border-radius: 6.9px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    color: white;
+  }
+  .searchicon{
+    max-width: 2.25%;
+    float: right;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.411);
+    padding-top: 0.2em;
+    padding-bottom: 5px;
+    padding-right: 9em;
+    padding-left: 0.5em;
+    margin-right: 3em;
+    border-radius: 6.9px;
+  }
+  .gridicon{
+    float: right;
+    padding-right: 1em;
+    max-width: 2.25%;
+    padding-left: 5px;
+    padding-top:0.2em;
+  }
+  .restarticon{
+    float: right;
+    padding-right: 0.5em;
+    max-width: 2.25%;
+    padding-top: 0.3em;
+  }
+  .rightthings{
+    display: inline;
+  }
+
+  .profilemenu{
+    position: absolute;
+    margin-left: 1em;
+    width: 13.5em;
+    bottom: 10px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+  }
+  .transactions{
+
+
+
+
+
+  overflow-y: scroll;
+
+
+
+  overflow-x: hidden;
+  }
+  .transactionsdiv{
+    margin-top: 3em;
+    overflow-y: scroll;
+    display: inline-block;
+    padding-bottom: 1em;
+    width: 50%;
+    max-height: 42.5vh;
+  }
+  .transactionsdiv::-webkit-scrollbar {
+      background: transparent; /* make scrollbar transparent */
+      width: 0px;
+  }
+
+  .detailed{
+    display: inline;
+    margin: 0;
+    position: absolute;
+    color: grey;
+    font-weight: 200;
+    font-size: 1.2em;
+  }
+  .detailss{
+    display: inline;
+    margin: 0;
+    position: absolute;
+    color: white;
+    font-weight: 600;
+    font-size: 1.75em;
+  }
+  .slider,
+  .slider > div {
+      background-position: center center;
+      display: block;
+      width: 100%;
+      height: 16.25em;
+      position: relative;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: #000;
+      overflow: hidden;
+      -moz-transition: transform .4s;
+      -o-transition: transform .4s;
+      -webkit-transition: transform .4s;
+      transition: transform .4s;
+  }
+
+  .slider > div {
+      position: absolute;
+  }
+
+  .slider > i {
+      color: #5bbd72;
+      position: absolute;
+      font-size: 60px;
+      margin: 20px;
+      top: 40%;
+      text-shadow: 0 10px 2px #223422;
+      transition: .3s;
+      width: 30px;
+      padding: 10px 13px;
+      background: #fff;
+      background: rgba(255, 255, 255, .3);
+      cursor: pointer;
+      line-height: 0;
+      box-sizing: content-box;
+      border-radius: 3px;
+      z-index: 4;
+  }
+
+  .slider > i svg {
+      margin-top: 3px;
+  }
+
+  .slider > .left {
+      left: -100px;
+  }
+  .slider > .right {
+      right: -100px;
+  }
+  .slider:hover > .left {
+      left: 0;
+  }
+  .slider:hover > .right {
+      right: 0;
+  }
+
+  .slider > i:hover {
+      background:#fff;
+      background: rgba(255, 255, 255, .8);
+      transform: translateX(-2px);
+  }
+
+  .slider > i.right:hover {
+      transform: translateX(2px);
+  }
+
+  .slider > i.right:active,
+  .slider > i.left:active {
+      transform: translateY(1px);
+  }
+
+  .slider:hover > div {
+      transform: scale(1.01);
+  }
+
+  .hoverZoomOff:hover > div {
+      transform: scale(1);
+  }
+
+  .slider > ul {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      z-index: 121;
+      padding: 0;
+      margin: 0;
+      transform: translate(-50%, 131%);
+  }
+
+  .slider > ul > li {
+      z-index: 1000;
+      padding: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      list-style: none;
+      float: left;
+      margin: 10px 10px 0;
+      cursor: pointer;
+      border: 1px solid #fff;
+      -moz-transition: .3s;
+      -o-transition: .3s;
+      -webkit-transition: .3s;
+      transition: .3s;
+  }
+
+  .slider > ul > .showli {
+      background-color: #7EC03D;
+      -moz-animation: boing .5s forwards;
+      -o-animation: boing .5s forwards;
+      -webkit-animation: boing .5s forwards;
+      animation: boing .5s forwards;
+  }
+
+  .slider > ul > li:hover {
+      background-color: #7EC03D;
+  }
+
+  .slider > .show {
+      z-index: 1;
+  }
+
+  .hideDots > ul {
+      display: none;
+  }
+
+  .showArrows > .left {
+      left: 0;
+  }
+
+  .showArrows > .right {
+      right: 0;
+  }
+
+  .titleBar {
+      z-index: 2;
+      display: inline-block;
+      background: rgba(0,0,0,.5);
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      transform: translateY(100%);
+      padding: 20px 30px;
+      transition: .3s;
+      color: #fff;
+  }
+
+  .titleBar * {
+      transform: translate(-20px, 30px);
+      transition: all 700ms cubic-bezier(0.37, 0.31, 0.2, 0.85) 200ms;
+      opacity: 0;
+  }
+
+  .titleBarTop .titleBar * {
+      transform: translate(-20px, -30px);
+  }
+
+  .slider:hover .titleBar,
+  .slider:hover .titleBar * {
+      transform: translate(0);
+      opacity: 1;
+  }
+
+  .titleBarTop .titleBar {
+      top: 0;
+      bottom: initial;
+      transform: translateY(-100%);
+  }
+
+  .slider > div span {
+      display: block;
+      background: rgba(0,0,0,.5);
+      position: absolute;
+      bottom: 0;
+      color: #fff;
+      text-align: center;
+      padding: 0;
+      width: 100%;
+  }
+
+
+  @keyframes boing {
+      0% {
+          transform: scale(1.2);
+      }
+      40% {
+          transform: scale(.6);
+      }
+      60% {
+          transform: scale(1.2);
+      }
+      80% {
+          transform: scale(.8);
+      }
+      100% {
+          transform: scale(1);
+      }
+  }
+
+
+  #slider2 {
+      max-width: 30%;
+      margin-right: 20px;
+  }
+
+  .row2Wrap {
+      display: flex;
+  }
+.logo{
+  max-width: 2%; padding-left: 1em; padding-top: 0.7em;  padding-right: 1px;
+}
+.logo:hover{
+  animation: rotation 2s infinite;
+
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.banner:hover {
+  animation:fadeout 2s 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeout{
+  from
+  {opacity: 100%;}
+  to{opacity: 0%;}
+}
+
+
+
+
+#background-video {
+  width: 100%;
+  top: -15em;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0%;
+}
+#hitman-vid{
+  
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0%;
+
+}
+.hitman:hover{
+  animation:fadeout 2s 1;
+  animation-fill-mode: forwards;
+}
+.hitman:hover + #hitmanvid{
+  transition-delay: 0s;
+  animation:visible 1.6s ;
+  animation-fill-mode: forwards;
+}
+.banner:hover + #background-video {
+  transition-delay: 0s;
+  animation:visible 1.6s ;
+
+  animation-fill-mode: forwards;
+}
+@keyframes visible{
+  from{
+    opacity: 0%;
+  }
+  to{
+    opacity: 100%;
+  }
+}
+.bruhme{
+  
+}
+.expend:hover{
+  animation:incsize 1s 1;
+  animation-fill-mode: forwards;
+}
+@keyframes incsize{
+    from{
+      max-width: 17em;
+    }
+    to{
+      max-width: 17.6em;
+    }
+}
+.expend{
+  animation:reverse3 1s 1;
+  animation-fill-mode: forwards;
+}
+@keyframes reverse3 {
+  
+  from{
+    max-width: 17.6em;
+  }
+  to{
+    max-width: 17em;
+  }
+}
+.expend2:hover{
+  animation: incsize2 1s 1;
+  animation-fill-mode: forwards;
+}
+@keyframes incsize2{
+    from{
+      max-width: 9em;
+    }
+    to{
+      max-width: 9.5em;
+    }
+}
+.expend2{
+  animation:reverse2 1s 1;
+  animation-fill-mode: forwards;
+}
+@keyframes reverse2{
+  from{
+    max-width: 9.5em;
+
+  }
+  to{
+    max-width: 9em;
+  }
+}
+.expend3:hover{
+  animation:incsize3 1s 1;
+  animation-fill-mode: forwards;
+}
+@keyframes incsize3{
+    from{
+      max-width: 20%;
+    }
+    to{
+      max-width: 20.5%;
+    }
+}
+.expend3{
+  animation:reverse4 1s 1;
+    animation-fill-mode: forwards;
+}
+@keyframes reverse4{
+    from{
+      max-width: 20.5%;
+    }
+    to{
+      max-width: 20%;
+    }
+}
