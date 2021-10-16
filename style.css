@@ -6,7 +6,7 @@
   body{
     height: 100vh;
 
-      background-image: url(images/hitdemn.jpg);
+      background-image: url(images/mc3.png);
       background-repeat: no-repeat;
       background-size: cover;
       overflow: hidden;
@@ -41,7 +41,7 @@
 
   }
   .xboxboi{
-    background-image: url(/images/xboxb.png);
+    background-image: url(images/xboxb.png);
     background-repeat: no-repeat;
     background-size: 95%;
   }
@@ -101,17 +101,24 @@
   }
   .smallimgs1{
     max-width: 20.35%;
+        height: 16.25em;
     padding-right: 5px;
   }
   .smallimgs{
+        height: 16.25em;
     max-width: 20.35%;
   }
 
   .smallimgs2{
-    max-width: 20.35%; padding-right: 5px;
+    height: 16.25em;
+    max-width: 20.35%;
+    padding-right: 5px;
   }
   .bigimgs{
     margin-bottom: 9em;
+    /* padding-top: 1em; */
+    width: 30.5em;
+    height: 16em;
     padding-left: 0.2em;
     max-width: 52.25% !important;
     border-radius: 5px;
@@ -549,7 +556,7 @@
   opacity: 0%;
 }
 #hitman-vid{
-  
+
   object-fit: cover;
   position: fixed;
   left: 0;
@@ -584,7 +591,7 @@
   }
 }
 .bruhme{
-  
+
 }
 .expend:hover{
   animation:incsize 1s 1;
@@ -603,7 +610,7 @@
   animation-fill-mode: forwards;
 }
 @keyframes reverse3 {
-  
+
   from{
     max-width: 17.6em;
   }
@@ -660,3 +667,354 @@
       max-width: 20%;
     }
 }
+
+.main {
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+    margin-top: 60px;
+}
+.mainInner{
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.mainInner div{
+    display:table-cell;
+    vertical-align: middle;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1.25px;
+}
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    z-index: 10;
+    width: 250px;
+    margin-top: 2.5em;
+    transform: translateX(-250px);
+    transition: transform 250ms ease-in-out;
+    background: black;
+}
+.sidebarMenuInner{
+    margin:0;
+    padding:0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li{
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li span{
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+}
+.sidebarMenuInner li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 14px;
+    left: 15px;
+    height: 22px;
+    width: 22px;
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+
+@media only screen and (min-width: 1050px) {
+  .mobilenav {
+    display: none;
+  }
+  .mobilecontent{
+    display:none;
+  }
+
+}
+@media only screen and (max-width: 1050px) {
+  .navbar {
+    display: none;
+  }
+  .header{
+    display: none;
+  }
+  .maincontent{
+
+    width: 90.25%;
+
+    top: 10%;
+
+    left: 5%;
+    max-height: 90vh;
+}
+.mobilecontent{
+  display:none;
+}
+
+  }
+  @media only screen and (max-width: 900px) {
+    .mobileheader{
+
+display: block;
+
+margin: 0 auto;
+
+width: 100%;
+
+max-width: 100%;
+
+box-shadow: none;
+
+background-color: black;
+
+position: fixed;
+
+height: 42px!important;
+
+overflow: hidden;
+
+z-index: 10;
+
+}
+    body{
+      background-image: url(images/mc3.png);
+      margin: 0;
+    }
+    .maincontent{
+      display:none;
+  }
+  .carouselContainer{
+    margin: 0 0.25em;
+  }
+    .mobilecontent{
+      padding: 1em;
+      padding-bottom: 0;
+      overflow-y: scroll;
+      max-height: 96vh;
+      display:block;
+      overflow-x: hidden;
+    }
+    .mobilecontent .slider{
+      margin-top: 10%;
+      max-width: 99.1% !important;
+    }
+    .mobilecontent .slider,.mobilecontent .slider > div {
+
+
+      background-color: transparent;
+      height: 25.25em;
+    }
+
+.carouselImage {
+    position: relative;
+    width: 20%;
+    height: fit-content;
+    /* padding: 24px; */
+    border: 1.5px solid black;
+    margin-right: 33px;
+    /* margin-top: 70px; */
+    /* margin-bottom: 50px; */
+    counter-increment: carousel-cell;
+    text-align: center;
+    vertical-align: center;
+    transition: transform 0.5s;
+    font-size: 1.2em;
+    border: none !important;
+  }
+@media only screen and (max-width: 1300px){
+    .carouselImage{
+        width: 30%;
+    }
+}
+@media only screen and (max-width: 773px){
+    .carouselImage{
+        width: 50%;
+    }
+
+}
+@media only screen and (max-width: 490px){
+    .carouselImage{
+        width: 50%;
+        padding: 15px;
+    }
+
+}
+
+
+.carouselImage.is-selected {
+
+border: 1.5px solid #00ADEE;
+
+color:#00ADEE;
+
+z-index:10;
+
+transform: scale(1);
+}
+.carouselImage.nextToSelectedLeft, .carouselImage.nextToSelectedRight {
+  transform: scale(1);
+  z-index:5;
+}
+
+/*! Flickity v2.0.5
+https://flickity.metafizzy.co
+---------------------------------------------- */
+
+.flickity-enabled {
+  position: relative;
+}
+
+/* .flickity-enabled:focus { outline: none; } */
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  /* height: 100%; */
+}
+
+/* draggable */
+
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+/*           tap-highlight-color: transparent; */
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+.flickity-viewport {
+    margin: 0px;
+    width: 100%;
+    /* margin-bottom: 100px; */
+}
+.slider2imgs{
+  max-width: 100%;
+}
+.carouselImage div {
+  display:none;
+}
+
+.carouselImage.is-selected .buybtn{
+visibility: visible;
+}
+.topimgs{
+  max-width: 100%;
+  border-radius: 5px;
+}
+.mobileheading{
+
+margin: 0;
+color: white;
+font-weight: 100;
+margin-left: 0.1em;
+margin-bottom: 0.5em;
+
+}
+.gamee{
+  background: rgba(0,0,0,0.6);
+  padding: 10px;
+  border-radius: 5px;
+}
+.buybtn{
+  background: #66fcf1;
+border: none;
+padding: 5px;
+width: 100%;
+border-radius: 5px;
+visibility: hidden;
+float: right;
+margin-top: 0.5em;
+color: black;
+font-weight: 600;
+}
+.xbox{
+  height: 10em;
+}
+  }
